@@ -1,8 +1,8 @@
 +++
-date = "2016-06-06T08:47:11+01:00"
+date = "2016-06-03T12:09:52+01:00"
 tags = ["BioDocker", "Introduction"]
 title = "What is BioDocker?"
-draft = false 
+draft = true 
 [menu.main]
 	parent = "mn_components"
 	weight = 1
@@ -35,9 +35,10 @@ of software and algorithms into more comprehensive bioinformatics pipelines. Fin
      </p>
      <p></p>							
    </div>
+   <div class="medium-6 columns">
+		<p style="text-align: center">
+		 {{< figure src="/icons/figure1.png">}}
+		</p>							
+   </div>
 </div>
-
-<p>
- <img class="splashIcon" scr="/icons/figure1.png" >Docker containers wrap up a piece of software in a complete filesystem that contains everything it needs to run: code, runtime, system tools, system libraries – anything you can install on a server.
-This guarantees that it will always run the same, regardless of the environment it is running in.</p>
 

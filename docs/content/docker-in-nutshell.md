@@ -96,8 +96,7 @@ Each instruction creates a new layer in our image. Instructions include actions 
 
 These instructions are stored in a file called a Dockerfile. A **Dockerfile** is a text based script that contains instructions and commands for building the image from the base image. Docker reads this Dockerfile when you request a build of an image, executes the instructions, and returns a final image.
 
-<pre>
-<code class="hljs sql">
+```bash
 
 FROM biodckr/biodocker:latest
 
@@ -105,7 +104,7 @@ FROM biodckr/biodocker:latest
 
 USER biodocker
 
-RUN ZIP=comet_binaries_2016012.zip && \ wget https://github.com/BioDocker/software-archive/releases/download/Comet/$ZIP -O /tmp/$ZIP && \ unzip /tmp/$ZIP -d /home/biodocker/bin/Comet/ && \ chmod -R 755 /home/biodocker/bin/Comet/\\* && \ rm /tmp/$ZIP
+RUN ZIP=comet_binaries_2016012.zip && \ wget https://github.com/BioDocker/software-archive/releases/download/Comet/$ZIP -O /tmp/$ZIP && \ unzip /tmp/$ZIP -d /home/biodocker/bin/Comet/ && \ chmod -R 755 /home/biodocker/bin/Comet/* && \ rm /tmp/$ZIP
 RUN mv /home/biodocker/bin/Comet/comet.2016012.linux.exe /home/biodocker/bin/Comet/comet
 ENV PATH /home/biodocker/bin/Comet:$PATH
 
@@ -115,8 +114,7 @@ WORKDIR /data/
 
 MAINTAINER Felipe da Veiga Leprevost <felipe@leprevost.com.br>
 
-</code>
-</pre>
+```
 
 ### How does a container work?
 
@@ -130,19 +128,15 @@ When Docker runs a container from an image, it adds a read-write layer on top of
 When you run a container, either by using the docker binary or via the API, the Docker client tells
 the Docker daemon to run a container.
 
-<pre>
-<code class="hljs sql">
-$ **docker** run -i -t ubuntu /bin/bash
-</code>
-</pre>
+```bash
+$ docker run -i -t ubuntu /bin/bash
+```
 
-<blokquote>
-  The Docker Engine client is launched using the docker binary with the run option running a new container. The bare minimum the
-  Docker client needs to tell the Docker daemon to run the container is:
+>The Docker Engine client is launched using the docker binary with the run option running a new container. The bare minimum the
+>Docker client needs to tell the Docker daemon to run the container is:
 
-   What Docker image to build the container from, for example: **ubuntu**
-   The command you want to run inside the container when it is launched, for example: **/bin/bash**
-</blockquote>
+>What Docker image to build the container from, for example: **ubuntu**
+>The command you want to run inside the container when it is launched, for example: **/bin/bash**
 
 ## References:
 
