@@ -1,0 +1,124 @@
+baseurl = "http://biodocker.org/docs/"
+contentdir = "content"
+languageCode = "en-us"
+title = "BioDocker Documentation"
+theme = "hugo-foundation"
+canonifyurls = true
+relativeURLs = true
+verbose = true
+
+[blackfriday]
+  fractions = false
+  smartDashes = false
+  plainIDAnchors = true
+  sourceRelativeLinksEval = true
+  sourceRelativeLinksProjectFolder = "/docs"
+
+# Menu configuration should come last in this file;
+# leave at least one blank line at the end
+#
+
+#
+# Component projects is a menu for Registry/Notary etc.
+#
+
+[[menu.main]]
+	name = "Getting Started"
+	identifier = "mn_components"
+	weight = 8
+
+[[menu.main]]
+	name = "Docker in NutShell"
+	identifier = "mn_docker"
+	weight = 9
+
+
+#[[menu.main]]
+#	name = "What is BioDocker"
+#	identifier = "mn_wbiodocker"
+#	weight = 1
+#	parent = "mn_components"
+
+#[[menu.main]]
+#	name = "What makes BioDocker different?"
+#	identifier = "mn_wmbiodocker"
+#	weight = 2
+#	parent = "mn_components"
+
+#[[menu.main]]
+#	name = "What does BioDocker do?"
+#	identifier = "mn_wdbiodocker"
+#	weight = 3
+#	parent = "mn_components"
+
+#
+# QuickStart
+#
+
+[[menu.main]]
+    name = "Quickstart Guide"
+	identifier = "mn_quickstart"
+	weight = 9
+
+
+#
+# About
+#
+
+[[menu.main]]
+	name = "About"
+	identifier = "mn_about"
+	weight = 10
+
+
+# Version
+#
+#[[menu.main]]
+#	name = "Docs archive"
+#	identifier = "mn_versions"
+#	weight = 11
+
+#[[menu.main]]
+#  	name = "Version 1.10"
+#  	identifier = "smn_ten"
+#  	parent = "mn_versions"
+#  	url = "http://docs.docker.com/v1.10/"
+# 	weight = -1
+
+#[[menu.main]]
+#	name = "Version 1.9"
+#	identifier = "smn_nineteen"
+#	parent = "mn_versions"
+#	url = "http://docs.docker.com/v1.9/"
+#	weight = 1
+
+#[[menu.main]]
+#	name = "Version 1.8"
+#	identifier = "smn_eightteen"
+#	parent = "mn_versions"
+#	url = "http://docs.docker.com/v1.8/"
+#	weight = 2
+#[[menu.main]]
+#	name = "Version 1.7"
+#	identifier = "smn_seventeen"
+#	parent = "mn_versions"
+#	url = "http://docs.docker.com/v1.7/"
+#	weight = 3
+#[[menu.main]]
+#	name = "Version 1.6"
+#	identifier = "smn_sixteen"
+#	parent = "mn_versions"
+#	url = "http://docs.docker.com/v1.6/"
+#	weight = 4
+#[[menu.main]]
+#	name = "Version 1.5"
+#	identifier = "smn_fifteen"
+#	parent = "mn_versions"
+#	url = "http://docs.docker.com/v1.5/"
+#	weight = 5
+#[[menu.main]]
+#	name = "Version 1.4"
+#	identifier = "smn_fourteen"
+#	parent = "mn_versions"
+#	url = "http://docs.docker.com/v1.4/"
+#	weight = 6
