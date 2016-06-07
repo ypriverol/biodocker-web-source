@@ -60,6 +60,10 @@ verbose = true
 	identifier = "mn_quickstart"
 	weight = 9
 
+[[menu.main]]
+    name = "Guide for Developers"
+	identifier = "mn_dquickstart"
+	weight = 10
 
 #
 # About
@@ -68,7 +72,7 @@ verbose = true
 [[menu.main]]
 	name = "About"
 	identifier = "mn_about"
-	weight = 10
+	weight = 11
 
 
 # Version

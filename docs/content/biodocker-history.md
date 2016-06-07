@@ -21,7 +21,13 @@ In 2014, they published a first manuscript of best practices to for bioinformati
 
 In 2013, [Docker](https://en.wikipedia.org/wiki/Docker_(software\)) became a more stable framework and rapidly grows in the IT community, 
 amount developers, software engenders, etc. In 2015, we started BioDocker as a community-driven project to standardize the way we 
-develop, deploy and use bioinformatics software. BioDocker has received an special attention from Mass-Spectrometry and Proteomics 
+develop, deploy and use bioinformatics software. 
+
+In 2015, two new developers become members of the project [Saulo Alves](https://github.com/sauloal) and 
+[Björn Grüning](https://github.com/bgruening) (from Galaxy Team) moving forward the project into a community-driven
+initiative. 
+
+BioDocker has received an special attention from Mass-Spectrometry and Proteomics 
 community. At the moment of writing (June 2016) BioDocker Provides more
 than [20 ready to use containers](https://github.com/BioDocker/containers).
 

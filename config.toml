@@ -98,7 +98,7 @@ theme = "hugo-creative-theme"
 
 		[params.aside.button]
 			text = "Documentation"
-			link = "documentation"
+			link = "docs"
 
 	# Contact section
 	[params.contact]
